@@ -1,12 +1,26 @@
+
 import streamlit as st
 import pandas as pd
 from cleaner import clean_data
 
 st.set_page_config("Data Cleaner App", layout="wide")
 
+st.markdown("Powered by LK Associates")
+
+st.info("Upload messy Excel or CSV file .Click Clean Data Download Clean file.")
+
 st.title("Smart Data Cleaning Tool")
 
+
+st.markdown("###About")
+
+st.write("this tool helps business clean raw data instantly")
+
+st.markdown ("---")
+
 file = st.file_uploader("Upload Excel or CSV", type=["xlsx","csv"])
+
+
 
 if file:
 
